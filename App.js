@@ -14,7 +14,7 @@ import Svg, { Circle } from 'react-native-svg';
 import * as ImagePicker from 'expo-image-picker';
 import { Camera } from 'expo-camera';
 
-const BACKEND_URL = "http://45.150.39.139:8000";
+const BACKEND_URL = "http://45.150.39.139";
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
