@@ -1,24 +1,39 @@
 {
   "expo": {
-    "name": "calzen-app",
-    "slug": "calzen-app",
+    "name": "calzen",
+    "slug": "calzen",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hedredysteam.calzen"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "backgroundColor": "#121212"
+      },
+      "package": "com.hedredysteam.calzen",
+      "usesCleartextTraffic": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-image-picker"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1f53941f-8de3-4e3d-8e81-981d6d8b54fd"
+      }
     }
   }
 }
